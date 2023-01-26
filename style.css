@@ -37,11 +37,14 @@ body {
 .btn-size-createacct {
     width: 297px;
     height: 70px;
-    border-radius: 10px;
 }
 
 .btn-colour, .btn-colour-2 {
     background-color: #000000 !important;
+}
+
+.btn-colour-3 {
+    background-color: #FFFFFF !important;
 }
 
 .btn-colour a, .btn-colour a:hover, .btn-size-createacct a, .btn-size-createacct a:hover {
@@ -54,7 +57,7 @@ body {
     border: 1px solid #000000 !important;
 }
 
-.btn-colour-signin a, .btn-colour-signin a:hover {
+.btn-colour-signin a, .btn-colour-signin a:hover, .btn-colour-3 a, .btn-colour-3 a:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -70,20 +73,6 @@ body {
 }
 
 /* Styling for hero section................................ */
-/* .hero {
-    background-image: url(assets/hero-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 3rem;
-    width: 100%;
-    min-height: 500px;
-    border-radius: 19px;
-} */
-
-/* .hero-container {
-    margin-left: 5rem !important;
-} */
-
 .hero-btn {
     margin-top: 4rem;
 }
@@ -126,6 +115,10 @@ body {
     font-weight: 300;
 }
 
+.hero-mobile {
+    display: none;
+}
+
 /* Styling for financiers section................................ */
 .financiers {
     margin-top: 8rem;
@@ -135,9 +128,9 @@ body {
     display: grid;
     gap: 10px;
     grid-template-areas: "A A A A    C C C C"
-                         "B B B B    D D E E"
-                         "B B B B    D D E E"
-                         "B B B B    G G F F";
+                         "B B B B    C C C C"
+                         "B B B B    D D D D"
+                         "B B B B    D D D D";
 }
 
 .financiers-content p {
@@ -160,17 +153,6 @@ body {
     grid-area: D;
 }
 
-.item-D {
-    grid-area: E;
-}
-
-.item-D {
-    grid-area: F;
-}
-
-.item-G {
-    grid-area: G;
-}
 
 .card-item {
     display: grid;
@@ -196,7 +178,7 @@ body {
     border-radius: 10px;
 }
 
-.track {
+.card-content {
     width: 352px;
     height: 279px;
     padding: 1.5rem;
@@ -204,22 +186,21 @@ body {
     line-height: 1.7rem;
 }
 
-.track p {
+.card-content p {
     margin-top: 1rem;
     font-weight: 300;
 }
 
-.track h5 {
+.card-content h5 {
     margin-top: 1rem;
     font-weight: 600;
 }
 
-
-.track-color {
+.card-color {
     background-color: #D9FFDD;
 }
 
-.track-color-2 {
+.card-color-2 {
     background-color: #FFEDD9;
 }
 
@@ -237,3 +218,280 @@ body {
     line-height: 26px;
 }
 
+/* Honour section................................... */
+.honour {
+    margin-top: 7rem;
+}
+
+.pattern-2 {
+    width: 670px;
+    height: 101px;
+    background-color: #F7F7F7;
+    background-image: url(assets/pattern-bg-2.png);
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.honour-contents {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "X Y"
+                         "X Y";
+}
+
+.item-X {
+    grid-area: X;
+}
+ 
+.item-Y {
+    grid-area: Y;
+ }
+
+ .honour-heading h5 {
+    margin-left: 10.5rem;
+    font-size: 32px;
+ }
+
+ .honour-heading p {
+    font-weight: 300;
+ }
+
+/* Partner section................................... */
+ .partner-img img {
+    width: 631px;
+ }
+
+ .ministry-partner {
+    background-color: #3E9161;
+    width: 900px;
+ }
+
+
+.partner-content {
+    display: grid;
+    grid-template-areas: "P P  Q"
+                         "P P  Q";
+ }
+
+ .item-p {
+    grid-area: P;
+ }
+
+ .item-q {
+    grid-area: Q;
+ }
+
+ .ministry-partner-content {
+    margin-left: 6.7rem;
+    margin-top: 4rem;
+ }
+
+ /* Styling for footer section */
+
+ .footer-container {
+    background-color: #000000;
+    height: 170px;
+}
+
+.footer-contents {
+    padding-top: 3.5rem;
+}
+
+.footer-contents p {
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .seeder-logo img {
+        width: 79px;
+    }
+
+    .nav-background {
+        height: 80px;
+    }
+
+    #seeder-nav {
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-colour-signin {
+        background-color: #000000 !important;
+        border: 1px solid #FFFFFF!important;
+    }
+
+    .btn-colour-signin a, .btn-colour-signin a:hover {
+        color: #FFFFFF;
+    }
+
+    .btn-size {
+        width: 80px;
+        height: 39px;
+    }
+
+    .hide-btn {
+        display: none !important;
+    }
+
+    .hero-img {
+        display: flex;
+        justify-content: center !important;
+    }
+ 
+    .hero-heading h1 {
+        margin-top: 3rem;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .hero-btn {
+        display: none;
+    }
+
+    .hero-heading-btn {
+        position: relative;
+    }
+    
+    .hero-heading-btn button {
+      width: 100%; 
+      margin-top: 3rem;
+    }
+
+    .hero-img img {
+        margin-top: 4rem;
+        width: 240px;
+        height: 272px;
+        border-radius: 15px;  
+    }
+    
+    .hero-border {
+        width: 208px;
+        height: 284px;
+        border: 1px solid #B8B6B6;
+        position: absolute;
+        z-index: -5000;
+        top: 450px;
+        left: 150px;
+        border-radius: 15px;
+    }
+    
+    .hero-div {
+        background: #FFFFFF;
+        width: 136px;
+        height: 68px;
+        z-index: 5000;
+        position: absolute;
+        top: 720px;
+        left: 70px;
+    }
+
+    .hero-heading-btn {
+        position: relative;
+    }
+
+    .hero-heading-btn button {
+        width: 100%; 
+        margin-top: 3rem;
+    }
+
+    .hero-mobile {
+        display: block;
+        margin-top: 3rem;
+    }
+
+    .financiers {
+        margin-top: 4rem;
+    }
+
+    .financiers-content {
+        display: grid;
+        gap: 0px;
+        grid-template-areas: "C C C C    C C C C"
+                             "A A A A    A A A A"
+                             "A A A A    A A A A"
+                             "D D D D    D D D D";
+    }
+
+    .financiers-content h2 {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .financiers-content p {
+        margin-bottom: 2rem;
+    }
+
+    .card-item {
+        display: grid;
+        gap: 30px;
+        grid-template-areas: "A  A"
+                             "B  B";
+    }
+
+    .btn-size-createacct {
+        width: 100%;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .honour {
+        margin-top: 3rem;
+    }
+
+    .honour-contents {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: "X X"
+                             "Y Y";
+    }
+
+    .pattern-2 {
+        width: 100%;
+    }
+
+    .honour-heading h5 {
+        margin-left: 0rem;
+        margin-top: 2rem;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .honour-heading p {
+        text-align: left !important;
+
+    }
+    
+    .partner-content {
+        display: grid;
+        gap: 40px;
+        grid-template-areas: "Q Q"
+                             "P P"
+                             "P P";
+     }
+
+     .ministry-partner {
+        height: 509px
+     }
+
+     .partner-img img {
+        width: 445px;
+    }
+
+    .ministry-partner-content {
+        margin-left: 2rem;
+        margin-top: 6rem;
+        margin-right: 2rem;
+        text-align: center;
+        width: 322px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1023px) {
+    .navbar-menu-items {
+        display: none;
+    }
+}
