@@ -77,6 +77,10 @@ body {
     margin-top: 4rem;
 }
 
+.hero-img {
+    position: relative;
+}
+
 .hero-img img {
     margin-top: 4rem;
     width: 397px;
@@ -89,8 +93,8 @@ body {
     border: 1px solid #B8B6B6;
     position: absolute;
     z-index: -5000;
-    top: 145px;
-    left: 955px;
+    top: 20px;
+    left: 80px;
 }
 
 .hero-div {
@@ -99,8 +103,8 @@ body {
     height: 101px;
     z-index: 5000;
     position: absolute;
-    top: 570px;
-    left: 780px;
+    top: 475px;
+    left: 0px
 }
 
 .hero-heading h1 {
@@ -180,7 +184,7 @@ body {
 
 .card-content {
     width: 352px;
-    height: 279px;
+    min-height: 279px;
     padding: 1.5rem;
     border-radius: 10px;
     line-height: 1.7rem;
@@ -259,15 +263,28 @@ body {
 /* Partner section................................... */
  .partner-img img {
     width: 631px;
+    height: 100%;
  }
+
+ .partner-img-mobile img {
+    display: none;
+}
 
  .ministry-partner {
     background-color: #3E9161;
     width: 900px;
+    position: relative;
  }
 
+ .row {
+    --bs-gutter-x: 0rem !important;
+ }
 
-.partner-content {
+ /* .partner-content {
+    display: flex 
+ } */
+
+/* .partner-content {
     display: grid;
     grid-template-areas: "P P  Q"
                          "P P  Q";
@@ -279,14 +296,15 @@ body {
 
  .item-q {
     grid-area: Q;
- }
+ } */
 
  .ministry-partner-content {
-    margin-left: 6.7rem;
-    margin-top: 4rem;
+    padding-left: 6.7rem !important;
+    margin-top: 6rem !important;
+    padding-right: 2rem !important;
  }
 
- /* Styling for footer section */
+ /* Styling for footer section........................................ */
 
  .footer-container {
     background-color: #000000;
@@ -336,11 +354,12 @@ body {
     .hero-img {
         display: flex;
         justify-content: center !important;
+        position: relative;
     }
  
     .hero-heading h1 {
         margin-top: 3rem;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 600;
     }
 
@@ -370,8 +389,8 @@ body {
         border: 1px solid #B8B6B6;
         position: absolute;
         z-index: -5000;
-        top: 450px;
-        left: 150px;
+        top: 45px;
+        left: 120px;
         border-radius: 15px;
     }
     
@@ -381,8 +400,8 @@ body {
         height: 68px;
         z-index: 5000;
         position: absolute;
-        top: 720px;
-        left: 70px;
+        top: 290px;
+        left: 0px;
     }
 
     .hero-heading-btn {
@@ -465,13 +484,13 @@ body {
 
     }
     
-    .partner-content {
+    /* .partner-content {
         display: grid;
         gap: 40px;
         grid-template-areas: "Q Q"
                              "P P"
                              "P P";
-     }
+     } */
 
      .ministry-partner {
         height: 509px
@@ -479,16 +498,40 @@ body {
 
      .partner-img img {
         width: 445px;
+        display: none;
+    }
+
+    .partner-img-mobile img {
+        display: block;
+        margin-bottom: 2.5rem;
     }
 
     .ministry-partner-content {
-        margin-left: 2rem;
-        margin-top: 6rem;
-        margin-right: 2rem;
+        padding-left: 2rem !important;
+        margin-top: 6rem !important;
+        padding-right: 2rem !important;
         text-align: center;
-        width: 322px;
     }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    .hero-border {
+        top: 45px;
+        left: 80px;
+    }
+    
+    .hero-div {
+        top: 290px;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .hero-border {
+        top: 45px;
+        left: 50px !important;
+    }  
+}  
 
 @media only screen and (min-width: 280px) and (max-width: 1023px) {
     .navbar-menu-items {
