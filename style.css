@@ -260,6 +260,11 @@ body {
     font-weight: 300;
  }
 
+ .break::after {
+    content: "\a";
+    white-space: pre;
+ }
+
 /* Partner section................................... */
  .partner-img img {
     width: 631px;
@@ -483,14 +488,11 @@ body {
         text-align: left !important;
 
     }
+
+    .break::after {
+        content: none;
+     }
     
-    /* .partner-content {
-        display: grid;
-        gap: 40px;
-        grid-template-areas: "Q Q"
-                             "P P"
-                             "P P";
-     } */
 
      .ministry-partner {
         height: 509px
