@@ -481,10 +481,11 @@ body {
 
     .automated-content {
     display: grid;
-    gap: 10px;
-    grid-template-areas: "J J  J J"
-                         "L L  L L"
-                         "M M  M M";
+    gap: 0px;
+    grid-template-areas:
+        "J"
+        "L"
+        "M";
 }
 
     .financiers-content h2 {
@@ -516,14 +517,10 @@ body {
         width: 100%;
     }
 
-    .card-content {
+    .card-content,.card-color-3, .card-color-4 {
         width: 100%;
     }
-
-    .card-color-3, .card-color-4 {
-        width: 384px;
-     }
-
+    
     .honour {
         margin-top: 3rem;
     }
