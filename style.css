@@ -137,7 +137,7 @@ body {
                          "B B B B    D D D D";
 }
 
-.financiers-content p {
+.financiers-content p, .automated-content p {
     font-weight: 300;
 }
 
@@ -160,7 +160,7 @@ body {
 
 .card-item {
     display: grid;
-    gap: 30px;
+    gap: 65px;
     grid-template-areas: "A  B"
                          "A  B";
 }
@@ -183,7 +183,7 @@ body {
 }
 
 .card-content {
-    width: 352px;
+    width: 384px;
     min-height: 279px;
     padding: 1.5rem;
     border-radius: 10px;
@@ -220,6 +220,67 @@ body {
 .create-account-item p {
     font-weight: 300;
     line-height: 26px;
+}
+
+/* automated giving section................................... */
+.automated-giving {
+    margin-top: 5rem;
+}
+
+.automated-content {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "J K  K K "
+                         "L L  M M";
+}
+
+.item-J {
+    grid-area: J;
+}
+
+.item-K {
+    grid-area: K;
+}
+
+.item-L {
+    grid-area: L;
+}
+
+.item-M {
+    grid-area: M;
+}
+
+.card-items {
+    display: grid;
+    gap: 0px;
+    grid-template-areas: "E  F"
+                         "E  F";
+}
+
+.item-3 {
+    grid-area: E;
+}
+
+.item-4 {
+    grid-area: F;
+}
+
+.hero-btn-3 {
+    margin-top: 5.5rem;
+}
+
+.card-color-3 {
+    background-color: #FFFCDE;
+    background-image: url(./assets/leaf-img2.png);
+    background-repeat: no-repeat;
+    background-position: 40px -40px;
+}
+
+.card-color-4 {
+    background-color: #DEF1FF;
+    background-image: url(./assets/leaf-img.png);
+    background-repeat: no-repeat;
+    background-position: 40px -40px;
 }
 
 /* Honour section................................... */
@@ -284,24 +345,6 @@ body {
  .row {
     --bs-gutter-x: 0rem !important;
  }
-
- /* .partner-content {
-    display: flex 
- } */
-
-/* .partner-content {
-    display: grid;
-    grid-template-areas: "P P  Q"
-                         "P P  Q";
- }
-
- .item-p {
-    grid-area: P;
- }
-
- .item-q {
-    grid-area: Q;
- } */
 
  .ministry-partner-content {
     padding-left: 6.7rem !important;
@@ -436,6 +479,14 @@ body {
                              "D D D D    D D D D";
     }
 
+    .automated-content {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "J J  J J"
+                         "L L  L L"
+                         "M M  M M";
+}
+
     .financiers-content h2 {
         margin-top: 3rem;
         margin-bottom: 1.5rem;
@@ -454,6 +505,13 @@ body {
                              "B  B";
     }
 
+    .card-items {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "E  E"
+                         "F  F";
+    }
+
     .btn-size-createacct {
         width: 100%;
     }
@@ -461,6 +519,10 @@ body {
     .card-content {
         width: 100%;
     }
+
+    .card-color-3, .card-color-4 {
+        width: 384px;
+     }
 
     .honour {
         margin-top: 3rem;
